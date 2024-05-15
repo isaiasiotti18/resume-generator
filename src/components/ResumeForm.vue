@@ -8,12 +8,12 @@
       </div>
       <div class="form-group">
         <label>Email: </label>
-        <input class="form-control" v-model="resume.contact" type="email" placeholder="Email" required />    
+        <input class="form-control" v-model="resume.email" type="email" placeholder="Email" required />    
       </div>
 
       <div class="form-group">
         <label>Celular/Whatsapp: </label>
-        <input class="form-control" v-model="resume.phone" type="text" placeholder="(99) 99999-9999" required />    
+        <input class="form-control" v-model="resume.phoneNumber" type="text" placeholder="(99) 99999-9999" required />    
       </div>
 
       <div class="form-group">
@@ -51,11 +51,13 @@ export default {
     return {
       resume: {
         name: '',
-        contact: '',
-        phone: '',
-        description: '',
-        github: '',
-        linkedin: '',
+        information: {
+          email: '',
+          phoneNumber: '',
+          description: '',
+          github: '',
+          linkedin: '',
+        },
         experience: [],
         education: []
       }
